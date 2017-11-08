@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=o
+comment0.target=boolean\ equals(java.lang.Object)
+comment0.text=\ returns\ <code>true</code>\ iff\ this\ book\ is\ equivalent\ to\ <code>o</code>,\ ie.\ if\ <code>o</code>\ is\ a\ book\n\ and\ they\ have\ the\ same\ author,\ title\ and\ publication\ year\n\ @return\ <code>true</code>\ iff\ this\ book\ is\ equivalent\ to\ <code>o</code>\n
+comment1.params=author\ title\ year\ text
+comment1.target=Book(java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment1.text=\n\ book\ is\ defined\ by\ its\ author\ (as\ a\ String),\ its\ title,\ its\n\ publication\ year\ and\ full\ text\n\ \n\ @param\ author\ the\ author\ of\ this\ book\n\ @param\ title\ the\ title\ of\ this\ book\n\ @param\ year\ the\ publicatiojn\ year\ of\ this\ book\n\ @param\ text\ the\ text\ of\ this\ book\n
+comment2.params=
+comment2.target=java.lang.String\ getAuthor()
+comment2.text=\n\ returns\ this\ book's\ author\n\ \n\ @return\ this\ book's\ author\n
+comment3.params=
+comment3.target=java.lang.String\ getTitle()
+comment3.text=\n\ returns\ this\ book's\ title\n\ \n\ @return\ this\ book's\ title\n
+comment4.params=
+comment4.target=void\ display()
+comment4.text=\n\ display\ information\ on\ this\ book\n
+comment5.params=
+comment5.target=void\ read()
+comment5.text=\n\ reads\ this\ book\ (actually\ displays\ text)\n
+numComments=6

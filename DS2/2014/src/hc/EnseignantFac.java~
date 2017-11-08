@@ -1,0 +1,27 @@
+/*
+ * Created on 25 févr. 2005
+ *
+ */
+package hc;
+
+/**
+ */
+
+public class EnseignantFac extends Enseignant {
+
+   private static final int SERVICE_DU = 192;
+   
+   /**
+    * 
+    */
+   public EnseignantFac(String name, int heuresEffectuees) {
+      super(name, heuresEffectuees);
+   }
+
+   /** les heures > au service dû sont complémentaires 
+    * @see hc.Enseignant#heuresComplementaires()
+    */
+   public int heuresComplementaires() {
+      return Math.max(0,this.heuresEffectuees - EnseignantFac.SERVICE_DU);
+   }
+}

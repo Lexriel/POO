@@ -1,0 +1,114 @@
+Les tours de Hanoï sont un jeu de réflexion consistant à déplacer des disques de diamètres différents d'une tour de départ à une tour d'arrivée en passant par une tour intermédiaire, et en un minimum de coups, tout en respectant les règles suivantes :
+* on ne peut déplacer plus d'un disque à la fois,
+* on ne peut placer un disque que sur un autre disque plus grand que lui ou sur un emplacement vide.
+
+Cas de 3 disques avec D (tour de départ), I (tour intermédiaire), A (tour d'arrivée) :
+
+   D       I       A
+
+  _|_      |       |
+ __|__     |       |
+___|___    |       |
+
+   |       |       |
+ __|__     |       |
+___|___    |      _|_
+
+   |       |       |
+   |       |       |
+___|___  __|__    _|_
+
+   |       |       |
+   |      _|_      |
+___|___  __|__     |
+
+   |       |       |
+   |      _|_      |
+   |     __|__  ___|___
+
+   |       |       |
+   |       |       |
+  _|_    __|__  ___|___
+
+   |       |       |
+   |       |     __|__
+  _|_      |    ___|___
+
+   |       |      _|_
+   |       |     __|__
+   |       |    ___|___
+
+Nombre de coups : 2^n-1 déplacements à réaliser avec n nombre de disques
+
+Algorithme récursif :
+n - nombre de disques utilisés
+src - emplacement de départ
+dest - emplacement d'arrivée
+inter - emplacement intermédiaire
+
+procédure move(n, src, dest, inter)
+  si n != 0 alors
+    move(n-1, src, inter, dest)  /* on met les n-1 disques les + légers sur inter */
+    moveOneDisc(src, dest)       /* on bouge le disque de taile n sur dest et il n'en bougera plus */
+    move(n-1, inter, dest, src)  /* on remet les n-1 disques précédemment déplacés sur src */
+  fin si
+fin procédure
+
+
+Diagrammes UML des classes
+ _______________________________________________________
+|                                                       |
+|                      <<class>>                        |
+|                        Hanoi                          |
+|_______________________________________________________|
+|                                                       |
+| - theTowers: Tower[]                                  |
+| - capacity: int                                       |
+|_______________________________________________________|
+|                                                       |
+| + Hanoi(capacity: int)                                |
+| + execute(): void                                     |
+| + moveOneDisc(src: int, dest: int): void              |
+| + move(n: int, src: int, dest: int, inter: int): void |
+| + display(): void                                     |
+| + main(args: String[]): static void                   |
+|_______________________________________________________|
+
+Pas besoin de paramètre pour la taille de theTowers, fixée à 3 sauf éventuellement avec
+private final int SIZE = 3;
+La classe principale (Hanoi) doit connaître capacity.
+ ________________________
+|                        |
+|       <<class>>        |
+|         Tower          |
+|________________________|
+|                        |
+| - theDiscs: Disc[]     | Tableau (ou liste) de disques présents (et ordonnés) sur la tour
+| - capacity: int        | Nombre total de disque pouvant être mis sur une tour
+| - nbDisc: int          | Nombre de disques sur une tour
+|________________________|
+|                        |
+| + Tower(capacity: int) |
+| + getCapacity(): int   |
+| + getNbDisc(): int     |
+| + isFull(): boolean    |
+| + isEmpty(): boolean   |
+| + top(): Disc          |
+| + push(d: Disc): void  |
+| + toString(): String   |
+|________________________|
+                             
+ ______________________ 
+|                      |
+|      <<class>>       |
+|        Disc          |
+|______________________|
+|                      |
+| - taille: int        | Taille d'un disque
+|______________________|
+|                      |
+| + Disc(t: int)       |
+| + getTaille(): int   |
+| + toString(): String |
+|______________________|
+

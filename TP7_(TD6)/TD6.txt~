@@ -1,0 +1,17 @@
+Question 1: algorithme
+
+Le joueur p1 joue un coup c1 ;
+Le joueur p2 joue un coup c2 ;
+On compare c1 et c2 ;
+On donne des points à p1 et p2 en fonction de la comparaison précédente ;
+
+Question 2: types
+
+Game : représente le jeu.
+Player : représente un joueur.
+Shape (type enum) : représente les coups (papier, feuille ou ciseaux).
+
+Donner le code, dans Game, de :
+private void playOneRound();
+
+

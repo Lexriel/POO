@@ -1,0 +1,6 @@
+package immobilier;
+
+public interface Louable {
+    public boolean estLoue();
+    public void setLoue(boolean loue);
+}

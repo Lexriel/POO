@@ -1,0 +1,23 @@
+package meteo.operation;
+
+import java.util.List;
+
+import meteo.Operation;
+import meteo.WeatherData;
+
+public class MinTMinOperation implements Operation{
+
+    @Override
+    public double process(List<WeatherData> dataList){		
+	double min = dataList.get(0).getTMin();
+	for(WeatherData data : dataList) {
+	    min = Math.min(min, data.getTMin());
+	}
+	return min;
+    }
+
+    @Override
+    public String getDescription(){		
+	return "minimal temperature";
+    }
+}

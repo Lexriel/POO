@@ -1,0 +1,42 @@
+Question 4
+----------
+
+S'il y a une notion d'ordre sur une collection (un ensemble par
+exemple), il faut implémenter Comparable<E> et recourir à la méthode
+compareTo. Les classes String, File, Integer, Float implémentent
+Comparable. En fait, chaque fois qu'on a créé compareTo pour des
+classes, on aurait dû mettre "implements Comparable" dans leurs
+entêtes.
+
+Si une classe n'implémente pas Comparable<E> ou que l'on a besoin de
+plusieurs ordres différents, on utilise l'interface Comparator<E> et
+la méthode
+public compare(E o1, E o2);
+
+avec o1 et o2 sont des arguments. Attention, cette méthode n'est pas
+statique (je ne sais pas pourquoi).
+
+Question 5
+----------
+public int hashCode(){
+  return this.identite.hashCode();
+}
+
+this.identite est un String donc le hashcode appelé est celui
+de la classe String.
+    ____      ______      ______
+   | 11 | -> | 153M | -> | 228F | ->
+   |____|    |______|    |______|
+   | 12 | -> ...
+   |____|
+   |    | -> ...
+   |____|
+   |    |
+   |____|
+   valeurs de hachage
+
+Il y a beaucoup d'étudiants, rechercher un étudiant dans une
+grande liste est fastidieux, mais si on calcule sa valeur de
+hachage, on y accède quasi directement, il y moins d'éléments à
+parcourir. On recoure à une recherche par hachage sur le nip.
+

@@ -1,0 +1,201 @@
+Exercice 1 
+-----------
+
+java -jar lookup.jar
+--- appel leon 1 ---
+B.leon
+A.timo
+B.bar
+A.leon
+B.bar
+A.tresor
+B.foo
+--- appel leon 2 ---
+B.leon
+C.timo
+A.leon
+C.bar
+A.tresor
+B.foo
+--- appel timo ---
+C.timo
+
+L'instruction ((A) ref).timo()" ne diffère pas des instructions
+A ref2 = ref;
+ref2.timo();
+donc même si la référence est de type A, l'objet lui reste le même,
+donc celui qui est instance de C (ref).
+Le lookup cherchant donc la méthode dans la classe de l'objet, c'est
+bien celle de C qui est utilisée.
+Le type de la référence ne sert qu'à la compilation.
+
+
+Exercice 2
+----------
+
+Q1.
+@Test
+public void ecartJoursTest(){
+  DateEmprunt d1 = new DateEmprunt(2015, 140);
+  DateEmprunt d2 = new DateEmprunt(2015, 220);
+  assertEquals(80, d1.ecartEnJours(d2));
+  assertEquals(80, d2.ecartEnJours(d1));
+  assertNotNull(d);
+}
+
+Q2-Q4-Q6-Q7.
+// Q2
+package bibliotheque;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Borrower{
+
+    private int nbMaxBorrows;
+    private String name;
+    private String borrowerId;
+    private Map<Book,BorrowDate> borrows;
+    private AlertSystem alertSystem;
+
+    /** creates a borrower with given data and <code>Library.DEFAULT_MAX_BORROWS</code> possible borrows  
+     * @param name name of borrower
+     * @param borrowerId id of the borrower
+     */
+    public Borrower(String name, String borrowerId){
+	this.name = name;
+	this.borrowerId = borrowerId;
+	this.nbMaxBorrows = Library.DEFAULT_MAX_BORROWS;
+	this.borrows = new HashMap<Book, BorrowDate>();
+    }
+	
+    // Q4
+    /**  this borrower borrows the given book 
+     * @param book the borrowed book
+     * @throws TooMuchBorrowsException if this borrower has already borrowed too much books 
+     */
+    public void borrowBook(Book book) throws TooMuchBorrowsException{
+	if (this.borrows.size() >= this.nbMaxBorrows){
+	    throw new TooMuchBorrowsException("number of max borrows reached :"+this.nbMaxBorrows);
+	}
+	this.borrows.put(book, BorrowDate.today());
+    }
+	
+    // Q6
+    /** this borrower returns a book, duration of borrowing is returned
+     * @param book the returned booked
+     * @return the duration of borrowing
+     * @throws WrongBorrowException if this borrower has not borrowed this book
+     */
+    public int returnBook(Book book) throws WrongBorrowException{
+	if(!this.borrows.containsValue(book)){
+	    throw new WrongBorrowException("not borrowing this book "+ book);
+	}
+	BorrowDate d = this.borrows.get(book);
+	int diff = d.differenceInDays(BorrowDate.today());
+	this.borrows.remove(book);
+	return diff;
+    }
+	
+    // Q7
+    /** returns <code>true</code> if one borrow exceeds its maximal allowed duration
+     * @return <code>true</code> iff one borrow exceeds its maximal allowed duration
+     */
+    public boolean isOutOfDelay(){
+	for(Book b : this.borrows.keySet()){
+	    int duration = this.borrows.get(b).differenceInDays(BorrowDate.today());
+	    if (duration > b.getBorrowDuration()){
+		return true;
+	    }
+	}
+	return false;
+    }
+
+    ...
+}
+
+Q3.
+    /**
+     * @see java.lang.Object#hashCode()
+     */
+    @Override
+    public int hashCode(){
+	return ((bookId == null) ? 0 : bookId.hashCode());
+    }
+
+    /** two books are equals iff they have same id
+     * @see java.lang.Object#equals(java.lang.Object)
+     */
+    @Override
+    public boolean equals(Object obj){
+	if (this == obj)
+	    return true;
+	if (obj == null)
+	    return false;
+	if (!(obj instanceof Book))
+	    return false;
+	Book other = (Book) obj;
+	if (bookId == null){
+	    if (other.bookId != null)
+		return false;
+	}
+	else if (!bookId.equals(other.bookId))
+	    return false;
+	return true;
+    }	
+
+Q5.
+package bibliotheque;
+public class TooMuchBorrowsException extends Exception{
+    public TooMuchBorrowsException(String msg){
+	super(msg);
+    }
+}
+
+Q8-Q10.
+    // Q8
+    /** returns the list of borrowers with at least one borrow exceeding allowed duration
+     * @return the list of borrowers with at least one borrow exceeding allowed duration
+     */
+    public List<Borrower> borrowersOutOfDelay(){
+	List<Borrower> result = new LinkedList<Borrower>();
+	for (Borrower borrower : this.theBorrowers){
+	    if (borrower.isOutOfDelay())
+		result.add(borrower);
+	}
+	return result;
+    }
+
+    // Q10
+    /** alerts every out of delay borrower using his alert system */
+    public void outOfDelayBorrowersAlert(){
+	List<Borrower> outOfDelay = this.borrowersOutOfDelay();
+	for(Borrower borrower : outOfDelay)
+	    borrower.getAlertSystem().sendMessage("you're out of delay");
+    }
+
+Q9.
+//Q 9
+package bibliotheque;
+public class ConsoleAlert implements AlertSystem{
+
+    public ConsoleAlert(){
+    }
+
+    @Override
+    public void sendMessage(String msg){
+	System.out.println(msg);
+    }
+
+    @Override
+    public String getDescription(){
+	return "console (stdout) alert system ";
+    }
+}
+
+Q10.
+    public void outOfDelayBorrowersAlert(){
+	List<Borrower> outOfDelay = this.borrowersOutOfDelay();
+	for(Borrower borrower : outOfDelay)
+	    borrower.getAlertSystem().sendMessage("you're out of delay");
+    }
+

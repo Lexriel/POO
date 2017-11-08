@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="AgenceDeLocation" size="668,205" id="immobilier" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D3130303020647331636F6F323031312F6A63">
+  <children xsi:type="editmodel:ClassEditModel" name="AgenceDeLocation" location="45,45" size="261,140" id="immobilier/AgenceDeLocation" runTimeClassModel="libere(Limmobilier.Louable;),AgenceDeLocation(),estLoue(Limmobilier.Louable;),addBien(Limmobilier.Louable;),biensLouables,loue(Limmobilier.Louable;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="175,15">
+      <children xsi:type="editmodel:AttributeEditModel" name="biensLouables" id="immobilier/AgenceDeLocation#biensLouables"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="238,75">
+      <children xsi:type="editmodel:MethodEditModel" name="AgenceDeLocation" id="immobilier/AgenceDeLocation#AgenceDeLocation()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addBien" id="immobilier/AgenceDeLocation#addBien(Limmobilier.Louable;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="estLoue" id="immobilier/AgenceDeLocation#estLoue(Limmobilier.Louable;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="libere" id="immobilier/AgenceDeLocation#libere(Limmobilier.Louable;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="loue" id="immobilier/AgenceDeLocation#loue(Limmobilier.Louable;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" properties="open=immobilier/AgenceDeLocation;wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

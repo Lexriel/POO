@@ -1,0 +1,28 @@
+package lookup;
+
+public class A {
+
+	public void leon() {
+		System.out.println("A.leon");
+		this.bar();
+		this.tresor();
+		this.foo();		
+	}
+
+	public void foo() {
+		System.out.println("A.foo");
+	}
+
+	private void tresor() {
+		System.out.println("A.tresor");
+	}
+
+	public void bar() {
+		System.out.println("A.bar");
+	}
+	
+	public void timo() {
+		System.out.println("A.timo");
+		this.bar();
+	}
+}

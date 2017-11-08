@@ -1,0 +1,60 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-6-openjdk-amd64/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.8.2.jar:/usr/share/bluej/userlib/pi4j-core.jar:/usr/share/bluej/userlib/pi4j-gpio-extension.jar:/usr/share/bluej/userlib/pi4j-device.jar:/usr/share/bluej/userlib/pi4j-service.jar:/home/alexandre/Cours/POO/TP2/Complexe
+-d
+/home/alexandre/Cours/POO/TP2/Complexe/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/usr/share/bluej/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java
+<---- end of javadoc command ---->
+Loading source file /home/alexandre/Cours/POO/TP2/Complexe/Complexe.java...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_37
+Building tree for all the packages and classes...
+Generating /home/alexandre/Cours/POO/TP2/Complexe/doc/Complexe.html...
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:32: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:41: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:50: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:59: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:68: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:80: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:119: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:133: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:133: warning - @return tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:80: warning - @param argument "" is not a parameter name.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:133: warning - @param argument "" is not a parameter name.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:133: warning - @return tag cannot be used in method with void return type.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:41: warning - @param argument "" is not a parameter name.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:32: warning - @param argument "" is not a parameter name.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:68: warning - @param argument "" is not a parameter name.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:59: warning - @param argument "" is not a parameter name.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:50: warning - @param argument "" is not a parameter name.
+/home/alexandre/Cours/POO/TP2/Complexe/Complexe.java:119: warning - @param argument "" is not a parameter name.
+Generating /home/alexandre/Cours/POO/TP2/Complexe/doc/package-frame.html...
+Generating /home/alexandre/Cours/POO/TP2/Complexe/doc/package-summary.html...
+Generating /home/alexandre/Cours/POO/TP2/Complexe/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /home/alexandre/Cours/POO/TP2/Complexe/doc/allclasses-frame.html...
+Generating /home/alexandre/Cours/POO/TP2/Complexe/doc/allclasses-noframe.html...
+Generating /home/alexandre/Cours/POO/TP2/Complexe/doc/index.html...
+Generating /home/alexandre/Cours/POO/TP2/Complexe/doc/stylesheet.css...
+18 warnings

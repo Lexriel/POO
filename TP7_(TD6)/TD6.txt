@@ -1,0 +1,65 @@
+Question 1: algorithme
+
+Le joueur p1 joue un coup c1 ;
+Le joueur p2 joue un coup c2 ;
+On compare c1 et c2 ;
+On donne des points à p1 et p2 en fonction de la comparaison précédente ;
+
+Question 2: types
+
+Game : représente le jeu.
+Player : représente un joueur.
+Shape (type enum) : représente les coups (papier, feuille ou ciseaux).
+
+Dans Game, de :
+private void playOneRound(){
+  System.out.println("******** new round *****");
+  Shape c1 = this.p1.play();
+  Shape c2 = this.p2.play();
+
+  System.out.println(this.p1 + " plays " + c1);
+  System.out.println(this.p2 + " plays " + c2);
+  int income = c1.compareShape(c2);
+  this.givePoints(income);
+}
+
+Dans Player :
+public Shape play(){
+  return Shape.random();
+}
+
+Avec dans Shape :
+public static Shape random(){
+  return Shape.values()[alea.nextInt(Shape.values().length)];
+}
+
+
+Question 3 :
+Shape c2 = Shape.PAPER;
+Ce n'est pas très propre, on perd l'esprit objet et l'information que le 
+joueur 2 joue.
+Il faudrait conserver play... (suite question 4)
+
+Question 4 :
+Dans play, coder quelque chose du style :
+si joueur de type 1 alors
+  jouer avec une stratégie aléatoire
+si joueur de type 2 alors
+  jouer avec la stratégie "toujours papier"
+si joueur de type 3 alors
+  jouer avec la stratégie 3
+fin si
+
+Question 5 :
+On propose une nouvelle stratégie, il peut etre intéressant de créer une 
+interface de stratégies : jouer aléatoirement, jouer toujours papier, jouer
+un coup via une saisie intéractive.
+On modifie la classe Player en ajoutant un attribut
+private Strategy myStrategy; et en modifiant la méthode play :
+public Shape play(){
+  return this.myStrategy.chooseShape();
+}
+Le reste ne change pas.
+
+Question 6 :
+Il faut une classe pour saisir et lire des entrées clavier : Input.

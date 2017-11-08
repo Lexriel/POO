@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=maxi
+comment0.target=MultiSwitch(int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ MultiSwitch\n
+comment1.params=i\ theBulb
+comment1.target=void\ setLightBulb(int,\ LightBulb)
+comment1.text=\n\ Fix\ the\ i-th\ light\ bulb\ controled\ by\ the\ multi-switch.\ Nothing\ happens\ if\ i\ do\ not\ correspond\ to\ a\n\ correct\ index\n\ @param\ i\ the\ index\ of\ the\ light\ bulb\ controled\n\ @param\ theBulb\ the\ light\ bulb\ controled\n
+comment2.params=
+comment2.target=void\ multiSwitchStatus()
+comment2.text=\n\ Switch\ states\ of\ the\ lights\ controled\ by\ the\ object\ MultiSwitch\n
+comment3.params=i
+comment3.target=java.lang.String\ toString(int)
+comment3.text=\n\ Return\ a\ sentence\ describing\ the\ switch\n
+comment4.params=
+comment4.target=void\ displayBulbStates()
+comment4.text=\n\ Display\ a\ sentence\ describing\ the\ switch\n
+numComments=5

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=weight
+comment0.target=Box(int)
+comment0.text=\ A\ box\ is\ defined\ by\ its\ weight\n\ @param\ weight\ this\ box\ weight\n
+comment1.params=
+comment1.target=int\ getWeight()
+comment1.text=returns\ this\ box's\ weight\n\ @return\ this\ box's\ weight\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\n\ @return\ a\ string\ representation\ for\ this\ box\n
+numComments=3

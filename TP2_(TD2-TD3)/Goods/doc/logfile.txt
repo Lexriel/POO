@@ -1,0 +1,52 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-6-openjdk-amd64/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.8.2.jar:/usr/share/bluej/userlib/pi4j-core.jar:/usr/share/bluej/userlib/pi4j-gpio-extension.jar:/usr/share/bluej/userlib/pi4j-device.jar:/usr/share/bluej/userlib/pi4j-service.jar:/home/alexandre/Cours/POO/TP2/Goods
+-d
+/home/alexandre/Cours/POO/TP2/Goods/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/usr/share/bluej/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/home/alexandre/Cours/POO/TP2/Goods/Goods.java
+<---- end of javadoc command ---->
+Loading source file /home/alexandre/Cours/POO/TP2/Goods/Goods.java...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_37
+Building tree for all the packages and classes...
+Generating /home/alexandre/Cours/POO/TP2/Goods/doc/Goods.html...
+/home/alexandre/Cours/POO/TP2/Goods/Goods.java:41: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Goods/Goods.java:59: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Goods/Goods.java:77: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Goods/Goods.java:87: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/Goods/Goods.java:59: warning - @param argument "" is not a parameter name.
+/home/alexandre/Cours/POO/TP2/Goods/Goods.java:41: warning - @param argument "" is not a parameter name.
+/home/alexandre/Cours/POO/TP2/Goods/Goods.java:68: warning - @return tag cannot be used in method with void return type.
+/home/alexandre/Cours/POO/TP2/Goods/Goods.java:50: warning - @return tag cannot be used in method with void return type.
+/home/alexandre/Cours/POO/TP2/Goods/Goods.java:77: warning - @param argument "" is not a parameter name.
+/home/alexandre/Cours/POO/TP2/Goods/Goods.java:87: warning - @param argument "" is not a parameter name.
+Generating /home/alexandre/Cours/POO/TP2/Goods/doc/package-frame.html...
+Generating /home/alexandre/Cours/POO/TP2/Goods/doc/package-summary.html...
+Generating /home/alexandre/Cours/POO/TP2/Goods/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /home/alexandre/Cours/POO/TP2/Goods/doc/allclasses-frame.html...
+Generating /home/alexandre/Cours/POO/TP2/Goods/doc/allclasses-noframe.html...
+Generating /home/alexandre/Cours/POO/TP2/Goods/doc/index.html...
+Generating /home/alexandre/Cours/POO/TP2/Goods/doc/stylesheet.css...
+10 warnings

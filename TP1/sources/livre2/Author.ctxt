@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=name\ firstname\ birthYear
+comment0.target=Author(java.lang.String,\ java.lang.String,\ int)
+comment0.text=\n\ an\ Author\ is\ defined\ by\ its\ nanme,\ firstanme,\ birth\ and\ death\ year\n\ @param\ name\ author's\ name\n\ @param\ firstname\ author's\ firstname\n\ @param\ birhtyear\ author's\ birth\ year\n
+comment1.params=
+comment1.target=void\ display()
+comment1.text=\n\ display\ author's\ information\n
+comment2.params=deathYear
+comment2.target=void\ setDeathYear(int)
+comment2.text=\n\ update\ this\ author\ death\ of\ year\n\n\ @param\ deathYear\n\ \ \ \ \ \ \ \ \ \ \ \ the\ death\ of\ year\ for\ this\ author\n
+numComments=3

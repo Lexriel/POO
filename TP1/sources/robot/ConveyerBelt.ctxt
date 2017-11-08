@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=maxWeight
+comment0.target=ConveyerBelt(int)
+comment0.text=\n\ a\ ConveyrBelt\ is\ defined\ by\ a\ maximal\ authorized\ \ weight\n\ @param\ maxWeight\ maximal\ authorized\ \ weight\n
+comment1.params=
+comment1.target=int\ getMaxWeight()
+comment1.text=\n\ returns\ the\ maximal\ authorized\ weight\n\ \n\ @return\ the\ maximal\ authorized\ weight\n
+comment2.params=box
+comment2.target=void\ receive(Box)
+comment2.text=\n\ a\ box\ is\ put\ on\ this\ belt,\ an\ exception\ is\ thrown\ if\ this\ belt\ is\ full\ or\ added\ box\ is\ too\ heavy\n\ \n\ @param\ box\n\ \ \ \ \ \ \ \ \ \ \ \ the\ bow\ put\ on\ the\ belt\n\ @exception\ IllegalArgumentException\ \ if\ box\ is\ too\ heavy\ \n\ @exception\ IllegalStateException\ \ if\ this\ belt\ is\ full\n
+comment3.params=
+comment3.target=boolean\ isFull()
+comment3.text=\n\ tells\ if\ belt\ is\ full\n\ \n\ @return\ <code>true</code>\ iff\ this\ belt\ is\ full\n
+comment4.params=box
+comment4.target=boolean\ accept(Box)
+comment4.text=\n\ checks\ if\ this\ belt\ can\ accept\ the\ given\ box\ \:\ it\ is\ not\ too\ heavy\n\ \n\ @param\ box\ the\ box\n\ @return\ <code>true</code>\ if\ box\ is\ not\ too\ heavy\ else\ <t>false</t>\ \n
+comment5.params=
+comment5.target=void\ display()
+comment5.text=\n\ displays\ boxes\ carried\ by\ this\ belt\n
+comment6.params=
+comment6.target=void\ emptyBelt()
+comment6.text=\n\ empty\ this\ belt\ \:\ removes\ all\ boxes\n
+numComments=7

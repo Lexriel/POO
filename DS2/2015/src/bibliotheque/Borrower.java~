@@ -1,0 +1,112 @@
+// Q2
+package bibliotheque;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Borrower{
+
+    private int nbMaxBorrows;
+    private String name;
+    private String borrowerId;
+    private Map<Book,BorrowDate> borrows;
+    private AlertSystem alertSystem;
+	
+
+
+    /** creates a borrower with given data and <code>Library.DEFAULT_MAX_BORROWS</code> possible borrows  
+     * @param name name of borrower
+     * @param borrowerId id of the borrower
+     */
+    public Borrower(String name, String borrowerId){
+	this.name = name;
+	this.borrowerId = borrowerId;
+	this.nbMaxBorrows = Library.DEFAULT_MAX_BORROWS;
+	this.borrows = new HashMap<Book, BorrowDate>();
+    }
+	
+    // Q4
+    /**  this borrower borrows the given book 
+     * @param book the borrowed book
+     * @throws TooMuchBorrowsException if this borrower has already borrowed too much books 
+     */
+    public void borrowBook(Book book) throws TooMuchBorrowsException{
+	if (this.borrows.size() >= this.nbMaxBorrows){
+	    throw new TooMuchBorrowsException("number of max borrows reached :"+this.nbMaxBorrows);
+	}
+	this.borrows.put(book, BorrowDate.today());
+    }
+	
+    // Q6
+    /** this borrower returns a book, duration of borrowing is returned
+     * @param book the returned booked
+     * @return the duration of borrowing
+     * @throws WrongBorrowException if this borrower has not borrowed this book
+     */
+    public int returnBook(Book book) throws WrongBorrowException{
+	if(!this.borrows.containsValue(book)){
+	    throw new WrongBorrowException("not borrowing this book "+ book);
+	}
+	BorrowDate d = this.borrows.get(book);
+	int diff = d.differenceInDays(BorrowDate.today());
+	this.borrows.remove(book);
+	return diff;
+    }
+	
+    // Q7
+    /** returns <code>true</code> if one borrow exceeds its maximal allowed duration
+     * @return <code>true</code> iff one borrow exceeds its maximal allowed duration
+     */
+    public boolean isOutOfDelay(){
+	for(Book b : this.borrows.keySet()){
+	    int duration = this.borrows.get(b).differenceInDays(BorrowDate.today());
+	    if (duration > b.getBorrowDuration()){
+		return true;
+	    }
+	}
+	return false;
+    }
+
+    /**
+     * @return the nbMaxBorrows
+     */
+    public int getNbMaxBorrows(){
+	return this.nbMaxBorrows;
+    }
+
+    /**
+     * @param nbMaxBorrows the nbMaxBorrows to set
+     */
+    public void setNbMaxBorrows(int nbMaxBorrows){
+	this.nbMaxBorrows = nbMaxBorrows;
+    }
+
+    /**
+     * @return the name
+     */
+    public String getName(){
+	return this.name;
+    }
+
+    /**
+     * @return the borrowerId
+     */
+    public String getBorrowerId(){
+	return this.borrowerId;
+    }
+	
+    /**
+     * @return the alertSystem
+     */
+    public AlertSystem getAlertSystem(){
+	return this.alertSystem;
+    }
+
+    /**
+     * @param alertSystem the alertSystem to set
+     */
+    public void setAlertSystem(AlertSystem alertSystem){
+	this.alertSystem = alertSystem;
+    }
+		
+}

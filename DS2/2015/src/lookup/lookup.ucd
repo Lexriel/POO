@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="585,433" id="lookup" metadata="uml2-1.0" initialized="true" zoom="1.6097211048538485" scrolledY="13" tag="1000" key="32303037303533312D3130303020647331323031332D323031342F4A43">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0" name="A" location="165,82" size="70,129" id="lookup/A" runTimeClassModel="bar(),leon(),tresor(),foo(),timo()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="47,80">
+      <children xsi:type="editmodel:MethodEditModel" name="bar" id="lookup/A#bar()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="foo" id="lookup/A#foo()"/>
+      <children xsi:type="editmodel:MethodEditModel" targetConnections="//@children.3/@sourceConnections.0" name="leon" id="lookup/A#timo()"/>
+      <children xsi:type="editmodel:MethodEditModel" targetConnections="//@children.4/@sourceConnections.0" name="timo" id="lookup/A#timo()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="tresor" id="lookup/A#tresor()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="C" location="495,300" size="70,113" id="lookup/C" runTimeClassModel="bar(),tresor(),foo(),timo()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="47,64">
+      <children xsi:type="editmodel:MethodEditModel" name="bar" id="lookup/C#bar()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="foo" id="lookup/C#foo()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="timo" id="lookup/C#timo()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="tresor" id="lookup/C#tresor()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="lookup/B&lt;-lookup/C" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,71" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="34,113" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="B" location="315,225" size="70,113" id="lookup/B" runTimeClassModel="bar(),leon(),tresor(),foo()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="47,64">
+      <children xsi:type="editmodel:MethodEditModel" name="bar" id="lookup/B#bar()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="foo" id="lookup/B#foo()"/>
+      <children xsi:type="editmodel:MethodEditModel" targetConnections="//@children.5/@sourceConnections.0" name="leon" id="lookup/B#leon()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="tresor" id="lookup/B#tresor()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="lookup/A&lt;-lookup/B" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,25" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="39,129"/>
+      <bendpoints secondRelativeDimension="60,38" firstRelativeDimension="-51,-1"/>
+      <bendpoints secondRelativeDimension="1,39" firstRelativeDimension="-110,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" location="15,105" size="85,52" fontInfo="Arial-8-0" note="this.bar();&#xD;&#xA;this.tresor();&#xD;&#xA;this.foo();">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" source="//@children.3" target="//@children.0/@children.1/@children.2" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="85,33" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-1,1"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" location="20,185" size="105,24" fontInfo="Arial-8-0" note="this.bar();&#x9;">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" source="//@children.4" target="//@children.0/@children.1/@children.3" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="104,15" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,1"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" location="157,300" size="86,52" fontInfo="Arial-8-0" note="this.timo();&#xD;&#xA;super.leon();&#xD;&#xA;this.tresor();">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" source="//@children.5" target="//@children.2/@children.1/@children.2" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="86,15" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,1"/>
+    </sourceConnections>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

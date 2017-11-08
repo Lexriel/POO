@@ -1,0 +1,27 @@
+/**
+ * JumpCell.java
+ *
+ *
+ * Created: Mon May 27 10:09:16 2002
+ *
+ * @author <a href="mailto:routier@lifl.fr">Jean-Christophe Routier</a>
+ * @version
+ */
+package goosegame;
+
+public class TeleportCell extends BasicCell {
+
+    protected int jumpIndex;
+
+    public TeleportCell(int index, int jumpIndex) {
+	super(index);
+	this.jumpIndex = jumpIndex;
+    }
+
+    public int handleMove(int dieThrow) {
+	return jumpIndex;
+    }
+    public String toString() {
+	return super.toString()+" (teleport to "+this.jumpIndex+")";
+    }
+}// JumpCell

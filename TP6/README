@@ -1,0 +1,63 @@
+AUTEURS : Alex TEMPERVILLE, Rubber DUCK
+VERSION ou DATE : 23/02/2016
+------------------------------------------
+
+TITRE DU PROJET : Manipulations
+-----------------
+
+OBJECTIFS DU PROJET : Structurer correctement un projet.
+---------------------
+Ce fichier doit indiquer à l'utilisateur les instructions qu'il peut
+effectuer, ce qui ne fonctionne pas, comment générer la documentation,
+comment faire les tests, comment créer l'archive, comment lancer un
+exécutable. Vous êtes libre de rédiger vos readme comme bon vous
+semble (vous pouvez copier la structure de mon README si vous le
+souhaitez, ou pas), tant qu'ils m'indiquent tout ce dont j'ai besoin
+pour effectuer tout ce qui vous est demandé et tout ce que vous voulez
+me montrer.
+
+INSTRUCTIONS UTILISATEURS :
+---------------------------
+
+Lancez la commande suivante dans le répertoire courant :
+make
+
+Cette commande :
+* génère la documentation dans le répertoire docs,
+* génère les classes dans le répertoire classes,
+* réalise les tests (en arrière plan) grâce à l'archive JUNIT.jar (il
+  s'agit de l'archive test-1.7.jar que j'ai renommée plus simplement),
+* crée une archive exécutable appli.jar (voir le Makefile pour son
+  contenu),
+* exécute l'archive exécutable. 
+
+On peut également opérer chacune des instructions précédentes
+séparemment, se référer au Makefile pour cela.
+
+Pour simplement lancer l'archive exécutable, lancer l'une des deux
+commandes suivantes dans le répertoire courant :
+java -jar appli.jar
+make exe
+
+QUELQUES PRECISIONS :
+---------------------
+
+Le fichier MANIFEST.MF définit la classe main pour lancer l'exécutable.
+Les sourcepath permettent d'éviter de devoir se placer dans src pour
+compiler et générer la documentation. C'est pratique !
+
+Le Makefile que je vous propose est "simple", il peut être étoffé (en
+utilisant des macros par exemple) et d'autres fonctionnalités, mais
+suffit pour cette archive. Il pourra être ré-utilisé et mis à jour (et
+amélioré) par vos soins pour de prochains TPs.
+On peut également nettoyer le répertoire courant grâce à "make realclean".
+Il est recommandé de faire "make clean" (ou "make realclean") avant un
+"make" pour avoir une archive "propre".
+
+MAIS QUI EST DONC RUBBER DUCK ?
+-------------------------------
+Il s'agit d'un canard de débuggage ! C'est super pratique !
+Si vous ne connaissez pas la méthode du canard en plastique, allez
+faire un tour sur les liens suivants :-)
+https://fr.wikipedia.org/wiki/Méthode_du_canard_en_plastique
+http://www.rubberduckdebugging.com/

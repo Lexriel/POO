@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Stock()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Stock\ initialized\ to\ 0\n
+comment1.params=initial_qty
+comment1.target=Stock(int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Stock\ initialized\ by\ a\ parameter\ initial_qty\n\ @param\ initial_qty\ initial\ quantity\ of\ the\ stock\n
+comment2.params=
+comment2.target=int\ getQuantity()
+comment2.text=\n\ Get\ the\ quantity\ of\ the\ stock\n\ \n\ @param\ \n\ @return\ this\ quantity\n
+comment3.params=n
+comment3.target=void\ add(int)
+comment3.text=\n\ Add\ elements\ in\ the\ existing\ stock\n\ \n\ @param\ n\ number\ of\ elements\ to\ add\n\ @return\ \n
+comment4.params=qty_removed
+comment4.target=int\ remove(int)
+comment4.text=\n\ Remove\ elements\ in\ the\ existing\ stock\n\ \n\ @param\ qte_removed\ number\ of\ elements\ to\ remove\n\ @return\ the\ effective\ number\ of\ elements\ removed\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\n\ Remove\ elements\ in\ the\ existing\ stock\n\ \n\ @param\ \n\ @return\ str\ a\ string\ describing\ the\ attributes\ of\ the\ stock\ object\n
+numComments=6

@@ -1,0 +1,49 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-6-openjdk-amd64/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.8.2.jar:/usr/share/bluej/userlib/pi4j-core.jar:/usr/share/bluej/userlib/pi4j-gpio-extension.jar:/usr/share/bluej/userlib/pi4j-device.jar:/usr/share/bluej/userlib/pi4j-service.jar:/home/alexandre/Cours/POO/TP2/First
+-d
+/home/alexandre/Cours/POO/TP2/First/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/usr/share/bluej/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/home/alexandre/Cours/POO/TP2/First/Stock.java
+<---- end of javadoc command ---->
+Loading source file /home/alexandre/Cours/POO/TP2/First/Stock.java...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_37
+Building tree for all the packages and classes...
+Generating /home/alexandre/Cours/POO/TP2/First/doc/Stock.html...
+/home/alexandre/Cours/POO/TP2/First/Stock.java:36: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/First/Stock.java:46: warning - @return tag has no arguments.
+/home/alexandre/Cours/POO/TP2/First/Stock.java:74: warning - @param tag has no arguments.
+/home/alexandre/Cours/POO/TP2/First/Stock.java:46: warning - @return tag cannot be used in method with void return type.
+/home/alexandre/Cours/POO/TP2/First/Stock.java:36: warning - @param argument "" is not a parameter name.
+/home/alexandre/Cours/POO/TP2/First/Stock.java:56: warning - @param argument "qte_removed" is not a parameter name.
+/home/alexandre/Cours/POO/TP2/First/Stock.java:74: warning - @param argument "" is not a parameter name.
+Generating /home/alexandre/Cours/POO/TP2/First/doc/package-frame.html...
+Generating /home/alexandre/Cours/POO/TP2/First/doc/package-summary.html...
+Generating /home/alexandre/Cours/POO/TP2/First/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /home/alexandre/Cours/POO/TP2/First/doc/allclasses-frame.html...
+Generating /home/alexandre/Cours/POO/TP2/First/doc/allclasses-noframe.html...
+Generating /home/alexandre/Cours/POO/TP2/First/doc/index.html...
+Generating /home/alexandre/Cours/POO/TP2/First/doc/stylesheet.css...
+7 warnings

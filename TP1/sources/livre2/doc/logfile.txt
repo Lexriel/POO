@@ -1,0 +1,43 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-6-openjdk-amd64/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.8.2.jar:/usr/share/bluej/userlib/pi4j-core.jar:/usr/share/bluej/userlib/pi4j-gpio-extension.jar:/usr/share/bluej/userlib/pi4j-device.jar:/usr/share/bluej/userlib/pi4j-service.jar:/home/alexandre/Cours/POO/TP1/sources/livre2
+-d
+/home/alexandre/Cours/POO/TP1/sources/livre2/doc
+-encoding
+windows-1252
+-charset
+windows-1252
+-docletpath
+/usr/share/bluej/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/home/alexandre/Cours/POO/TP1/sources/livre2/Author.java
+<---- end of javadoc command ---->
+Loading source file /home/alexandre/Cours/POO/TP1/sources/livre2/Author.java...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_37
+Building tree for all the packages and classes...
+Generating /home/alexandre/Cours/POO/TP1/sources/livre2/doc/Author.html...
+/home/alexandre/Cours/POO/TP1/sources/livre2/Author.java:18: warning - @param argument "birhtyear" is not a parameter name.
+Generating /home/alexandre/Cours/POO/TP1/sources/livre2/doc/package-frame.html...
+Generating /home/alexandre/Cours/POO/TP1/sources/livre2/doc/package-summary.html...
+Generating /home/alexandre/Cours/POO/TP1/sources/livre2/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /home/alexandre/Cours/POO/TP1/sources/livre2/doc/allclasses-frame.html...
+Generating /home/alexandre/Cours/POO/TP1/sources/livre2/doc/allclasses-noframe.html...
+Generating /home/alexandre/Cours/POO/TP1/sources/livre2/doc/index.html...
+Generating /home/alexandre/Cours/POO/TP1/sources/livre2/doc/stylesheet.css...
+1 warning

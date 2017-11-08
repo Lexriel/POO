@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Robot()
+comment0.text=\n\ Initially\ a\ robot\ carrys\ no\ box\n
+comment1.params=box
+comment1.target=void\ take(Box)
+comment1.text=\n\ this\ robot\ takes\ a\ box\ of\ it\ is\ not\ already\ acrrying\ one\n\ \n\ @param\ box\n\ \ \ \ \ \ \ \ \ \ \ \ the\ taken\ box\n\ @exception\ IllegalStateException\ if\ this\ robot\ is\ already\ carrying\ a\ box\n
+comment2.params=belt
+comment2.target=void\ putOn(ConveyerBelt)
+comment2.text=\n\ this\ robot\ puts\ the\ box\ it\ is\ carrying\ on\ the\ belt,\ message\ is\ displaid\ if\ it\ is\ not\ possible\ to\ put\ the\ box\ on\ the\ belt\n\ \n\ @param\ belt\n\ \ \ \ \ \ \ \ \ \ \ \ the\ belt\ where\ to\ put\ the\ carrying\ belt\ \n
+comment3.params=
+comment3.target=boolean\ carryBox()
+comment3.text=\n\ returns\ <tt>true</tt>\ iff\ this\ robot\ is\ carrying\ a\ box\n\ \n\ @return\ <tt>true</tt>\ iff\ this\ robot\ is\ carrying\ a\ box\n
+numComments=4

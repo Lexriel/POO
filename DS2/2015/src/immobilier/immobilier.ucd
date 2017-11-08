@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="2165,940" id="immobilier" metadata="uml2-1.0" initialized="true" zoom="0.75" tag="1000" key="32303037303533312D3130303020647331636F6F323031312F6A63">
+  <children xsi:type="editmodel:EnumerationEditModel" name="NiveauScolaire" location="1710,675" size="197,113" id="immobilier/NiveauScolaire" runTimeClassModel="maternelle%,lycee%,elementaire%,college%">
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,60">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="maternelle" location="24,25" id="immobilier/NiveauScolaire#maternelle%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="elementaire" id="immobilier/NiveauScolaire#elementaire%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="college" id="immobilier/NiveauScolaire#college%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="lycee" id="immobilier/NiveauScolaire#lycee%"/>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Physique" location="1185,809" size="300,95" id="immobilier/Physique" runTimeClassModel="Physique(Ljava.lang.String;Ljava.lang.String;),getNumeroSecu(),numeroSecu">
+    <children xsi:type="editmodel:CompartmentEditModel" size="115,15">
+      <children xsi:type="editmodel:AttributeEditModel" name="numeroSecu" location="15,38" id="immobilier/Physique#numeroSecu"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="231,30">
+      <children xsi:type="editmodel:MethodEditModel" name="Physique" id="immobilier/Physique#Physique(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNumeroSecu" id="immobilier/Physique#getNumeroSecu()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="immobilier/Personne&lt;-immobilier/Physique" source="//@children.1" target="//@children.3/@sourceConnections.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="148,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0" name="Personne" location="1094,630" size="201,95" id="immobilier/Personne" runTimeClassModel="Personne(Ljava.lang.String;),getNom(),nom">
+    <children xsi:type="editmodel:CompartmentEditModel" size="70,15">
+      <children xsi:type="editmodel:AttributeEditModel" name="nom" id="immobilier/Personne#nom"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,30">
+      <children xsi:type="editmodel:MethodEditModel" name="Personne" id="immobilier/Personne#Personne(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNom" id="immobilier/Personne#getNom()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Morale" location="870,809" size="272,95" id="immobilier/Morale" runTimeClassModel="Morale(Ljava.lang.String;Ljava.lang.String;),getSiret(),siret">
+    <children xsi:type="editmodel:CompartmentEditModel" size="70,15">
+      <children xsi:type="editmodel:AttributeEditModel" name="siret" id="immobilier/Morale#siret"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="192,30">
+      <children xsi:type="editmodel:MethodEditModel" name="Morale" id="immobilier/Morale#Morale(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSiret" id="immobilier/Morale#getSiret()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.1/@sourceConnections.0" autoLocated="true" id="immobilier/Personne&lt;-immobilier/Morale" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="134,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="99,95" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.0" name="Habitation" location="254,264" size="483,125" id="immobilier/Habitation" runTimeClassModel="nbPieces,loue,Habitation(Limmobilier.Adresse;Limmobilier.Physique;II),setLoue(Z),estLoue()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="88,30">
+      <children xsi:type="editmodel:AttributeEditModel" name="loue" id="immobilier/Habitation#loue"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nbPieces" id="immobilier/Habitation#nbPieces"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="420,45">
+      <children xsi:type="editmodel:MethodEditModel" name="Habitation" id="immobilier/Habitation#Habitation(Limmobilier.Adresse;Limmobilier.Physique;II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="estLoue" id="immobilier/Habitation#estLoue()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLoue" id="immobilier/Habitation#setLoue(Z)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.11/@sourceConnections.0" autoLocated="true" id="immobilier/Immobilier&lt;-immobilier/Habitation" source="//@children.4" target="//@children.7" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="239,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="209,185" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="immobilier/Louable&lt;-immobilier/Habitation" source="//@children.4" target="//@children.8" targetEnd="//@children.4/@sourceConnections.1/@children.1" sourceEnd="//@children.4/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="119,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-1,30" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.6/@sourceConnections.0" name="Appartement" location="436,445" size="570,95" id="immobilier/Appartement" runTimeClassModel="Appartement(Limmobilier.Adresse;Limmobilier.Physique;III),getEtage(),etage">
+    <children xsi:type="editmodel:CompartmentEditModel" size="65,15">
+      <children xsi:type="editmodel:AttributeEditModel" name="etage" location="38,46" id="immobilier/Appartement#etage"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="493,30">
+      <children xsi:type="editmodel:MethodEditModel" name="Appartement" id="immobilier/Appartement#Appartement(Limmobilier.Adresse;Limmobilier.Physique;III)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEtage" id="immobilier/Appartement#getEtage()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.9/@sourceConnections.0" autoLocated="true" id="immobilier/Habitation&lt;-immobilier/Appartement" source="//@children.5" target="//@children.4" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="285,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="240,125" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Studio" location="450,664" size="512,95" id="immobilier/Studio" runTimeClassModel="getSurfaceImposable(),cOEFF_REDUC,Studio(Limmobilier.Adresse;Limmobilier.Physique;III)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="115,15">
+      <children xsi:type="editmodel:AttributeEditModel" name="cOEFF_REDUC" id="immobilier/Studio#cOEFF_REDUC"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="457,30">
+      <children xsi:type="editmodel:MethodEditModel" name="Studio" id="immobilier/Studio#Studio(Limmobilier.Adresse;Limmobilier.Physique;III)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSurfaceImposable" id="immobilier/Studio#getSurfaceImposable()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="immobilier/Appartement&lt;-immobilier/Studio" source="//@children.6" target="//@children.5" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="255,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="269,95"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0" name="Immobilier" location="900,39" size="422,185" id="immobilier/Immobilier" runTimeClassModel="getSurfaceImposable(),getAdresse(),adresse,proprietaire,getProprietaire(),getSurfaceTotale(),Immobilier(Limmobilier.Adresse;Limmobilier.Personne;I),setProprietaire(Limmobilier.Personne;),surfaceTotale">
+    <children xsi:type="editmodel:CompartmentEditModel" size="134,45">
+      <children xsi:type="editmodel:AttributeEditModel" name="adresse" id="immobilier/Immobilier#adresse"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="proprietaire" id="immobilier/Immobilier#proprietaire"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="surfaceTotale" id="immobilier/Immobilier#surfaceTotale"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="346,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Immobilier" id="immobilier/Immobilier#Immobilier(Limmobilier.Adresse;Limmobilier.Personne;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAdresse" id="immobilier/Immobilier#getAdresse()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getProprietaire" id="immobilier/Immobilier#getProprietaire()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSurfaceImposable" id="immobilier/Immobilier#getSurfaceImposable()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSurfaceTotale" id="immobilier/Immobilier#getSurfaceTotale()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setProprietaire" id="immobilier/Immobilier#setProprietaire(Limmobilier.Personne;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.10/@sourceConnections.1 //@children.4/@sourceConnections.1" name="Louable" location="577,54" size="220,93" id="immobilier/Louable" runTimeClassModel="setLoue(Z),estLoue()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="143,30">
+      <children xsi:type="editmodel:MethodEditModel" name="estLoue" id="immobilier/Louable#estLoue()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLoue" id="immobilier/Louable#setLoue(Z)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Maison" location="45,554" size="540,95" id="immobilier/Maison" runTimeClassModel="getSurfTerrain(),Maison(Limmobilier.Adresse;Limmobilier.Physique;III),surfTerrain">
+    <children xsi:type="editmodel:CompartmentEditModel" size="91,15">
+      <children xsi:type="editmodel:AttributeEditModel" name="surfTerrain" id="immobilier/Maison#surfTerrain"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="487,30">
+      <children xsi:type="editmodel:MethodEditModel" name="Maison" id="immobilier/Maison#Maison(Limmobilier.Adresse;Limmobilier.Physique;III)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSurfTerrain" id="immobilier/Maison#getSurfTerrain()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="immobilier/Habitation&lt;-immobilier/Maison" source="//@children.9" target="//@children.5/@sourceConnections.0" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="266,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="1,-20"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Commerce" location="1034,427" size="511,155" id="immobilier/Commerce" runTimeClassModel="getSurfaceImposable(),Commerce(Limmobilier.Adresse;Limmobilier.Morale;II),loue,getSurfaceEntrepot(),surfaceEntrepot,setLoue(Z),estLoue()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="121,30">
+      <children xsi:type="editmodel:AttributeEditModel" name="loue" id="immobilier/Commerce#loue"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="surfaceEntrepot" id="immobilier/Commerce#surfaceEntrepot"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="448,75">
+      <children xsi:type="editmodel:MethodEditModel" name="Commerce" id="immobilier/Commerce#Commerce(Limmobilier.Adresse;Limmobilier.Morale;II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="estLoue" id="immobilier/Commerce#estLoue()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSurfaceEntrepot" id="immobilier/Commerce#getSurfaceEntrepot()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSurfaceImposable" id="immobilier/Commerce#getSurfaceImposable()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLoue" id="immobilier/Commerce#setLoue(Z)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="immobilier/Professionnel&lt;-immobilier/Commerce" source="//@children.10" target="//@children.12/@sourceConnections.0" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="253,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="immobilier/Louable&lt;-immobilier/Commerce" source="//@children.10" target="//@children.8" targetEnd="//@children.10/@sourceConnections.1/@children.1" sourceEnd="//@children.10/@sourceConnections.1/@children.0" connectionRouterKind="Manual" anchorType="ChopBox">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="140,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="180,93"/>
+      <bendpoints secondRelativeDimension="150,111" firstRelativeDimension="-94,-155"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.12/@sourceConnections.0" name="Professionnel" location="1259,294" size="429,65" id="immobilier/Professionnel" runTimeClassModel="Professionnel(Limmobilier.Adresse;Limmobilier.Morale;I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="349,15">
+      <children xsi:type="editmodel:MethodEditModel" name="Professionnel" id="immobilier/Professionnel#Professionnel(Limmobilier.Adresse;Limmobilier.Morale;I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="immobilier/Immobilier&lt;-immobilier/Professionnel" source="//@children.11" target="//@children.4/@sourceConnections.0" targetEnd="//@children.11/@sourceConnections.0/@children.1" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="213,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Ecole" location="1560,435" size="573,140" id="immobilier/Ecole" runTimeClassModel="getSurfaceImposable(),getNiveau(),Ecole(Limmobilier.Adresse;Limmobilier.Morale;ILimmobilier.NiveauScolaire;I),niveau,getNbClasses(),nbClasses">
+    <children xsi:type="editmodel:CompartmentEditModel" size="133,30">
+      <children xsi:type="editmodel:AttributeEditModel" name="nbClasses" id="immobilier/Ecole#nbClasses"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="niveau" id="immobilier/Ecole#niveau"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="514,60">
+      <children xsi:type="editmodel:MethodEditModel" name="Ecole" id="immobilier/Ecole#Ecole(Limmobilier.Adresse;Limmobilier.Morale;ILimmobilier.NiveauScolaire;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNbClasses" id="immobilier/Ecole#getNbClasses()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNiveau" id="immobilier/Ecole#getNiveau()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSurfaceImposable" id="immobilier/Ecole#getSurfaceImposable()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.10/@sourceConnections.0" autoLocated="true" id="immobilier/Professionnel&lt;-immobilier/Ecole" source="//@children.12" target="//@children.11" targetEnd="//@children.12/@sourceConnections.0/@children.1" sourceEnd="//@children.12/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="284,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="213,65" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" packageIndication="2" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

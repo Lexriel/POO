@@ -1,0 +1,43 @@
+AUTEURS : Alex TEMPERVILLE, Rubber DUCK
+VERSION ou DATE : 23/02/2016
+------------------------------------------
+
+TITRE DU PROJET : Pierre-Feuille-Ciseaux
+-----------------
+
+OBJECTIFS DU PROJET : Créer le programme du jeu
+---------------------
+
+INSTRUCTIONS UTILISATEURS :
+---------------------------
+
+Lancez la commande suivante dans le répertoire courant :
+make
+
+Cette commande :
+* génère la documentation dans le répertoire docs,
+* génère les classes dans le répertoire classes,
+* réalise les tests (en arrière plan) grâce à l'archive JUNIT.jar (il
+  s'agit de l'archive test-1.7.jar que j'ai renommée plus simplement),
+* crée une archive exécutable appli.jar (voir le Makefile pour son
+  contenu),
+* exécute l'archive exécutable. 
+
+On peut également opérer chacune des instructions précédentes
+séparemment, se référer au Makefile pour cela.
+
+Pour simplement lancer l'archive exécutable, lancer l'une des deux
+commandes suivantes dans le répertoire courant :
+java -jar appli.jar
+make exe
+
+QUELQUES PRECISIONS :
+---------------------
+
+Le fichier MANIFEST.MF définit la classe main pour lancer l'exécutable.
+Les sourcepath permettent d'éviter de devoir se placer dans src pour
+compiler et générer la documentation. C'est pratique !
+
+On peut également nettoyer le répertoire courant grâce à "make realclean".
+Il est recommandé de faire "make clean" (ou "make realclean") avant un
+"make" pour avoir une archive "propre".

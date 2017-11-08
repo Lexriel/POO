@@ -1,0 +1,29 @@
+# Compilation
+cd src
+javac hanoi/HanoiMain.java -d ../classes
+javac io/HanoiInput.java -d ../classes
+cd ..
+
+# Documentation
+cd src
+javadoc hanoi hanoi.util io -d ../docs
+javadoc -d ../docs -subpackages hanoi io
+cd ..
+
+# Tests
+javac -classpath test.jar test/DiscTest.java
+javac -classpath test.jar test/TowerTest.java
+java -jar test.jar DiscTest
+java -jar test.jar TowerTest
+
+# Création du jar
+cd classes
+jar cvfm ../alexHanoi.jar ../manifest hanoi io -C .. docs test src
+
+# Exécution dans classes
+cd classes
+java hanoi.HanoiMain 4
+cd ..
+
+# Exécution par le jar
+java -jar alexHanoi.jar 4
